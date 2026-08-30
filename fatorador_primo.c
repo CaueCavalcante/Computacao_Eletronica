@@ -28,7 +28,9 @@ int main() {
             if (continuar != 's' && continuar != 'S' && continuar != 'n' && continuar != 'N') {
                 printf("opcao invalida, digite apenas 's' ou 'n'.");
             }
-        } while (continuar != 's' && continuar != 'S' && continuar != 'n' && continuar != 'N');
-    } while (continuar == 's' || continuar == 'S');
+        } 
+        while (continuar != 's' && continuar != 'S' && continuar != 'n' && continuar != 'N');
+    } 
+    while (continuar == 's' || continuar == 'S');
     return 0;
 }
