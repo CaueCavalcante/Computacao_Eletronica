@@ -20,10 +20,9 @@ int main() {
                     divisor++;
                 }
             }
-            printf("\n");
         }
         do {
-            printf("deseja inserir outro numero? (s/n): ");
+            printf("\ndeseja inserir outro numero? (s/n): ");
             scanf(" %c", &continuar);
             if (continuar != 's' && continuar != 'S' && continuar != 'n' && continuar != 'N') {
                 printf("opcao invalida, digite apenas 's' ou 'n'.");
