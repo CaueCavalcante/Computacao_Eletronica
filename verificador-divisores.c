@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main () {
     char continuar;
     int numero, divisor;
@@ -12,16 +13,12 @@ int main () {
         }
         else {
             printf("%d nao eh divisivel por %d", numero, divisor);
-            }
-        do {
-            printf("\npara continuar digite 's', caso contrario digite 'n': ");
-            scanf(" %c", &continuar);
-            if (continuar != 's' && continuar != 'S' && continuar != 'n' && continuar != 'N') {
-                printf("erro: digite apenas 's' para continuar ou 'n' para fechar o programa.\n\n");
-            }
-        } 
-        while (continuar != 's' && continuar != 'S' && continuar != 'n' && continuar != 'N');
+        }
+        printf("\nDigite 's' caso queira continuar no programa: ");
+        scanf(" %c", &continuar);
     }
     while (continuar == 's' || continuar == 'S');
+    return 0;
+}ar == 'S');
     return 0;
 }
