@@ -19,6 +19,4 @@ int main () {
     }
     while (continuar == 's' || continuar == 'S');
     return 0;
-}ar == 'S');
-    return 0;
 }
