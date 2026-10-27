@@ -6,9 +6,9 @@ int main() {
         printf("Digite o numero %d/10: ", i + 1);
         scanf("%d", &v[i]);
     }
-    printf("\nVetor: ");
-    for (i = 0; i < 10; i++) printf("%d ", v[i]);
-    printf("\n\n");
+    printf("\nVetor: {");
+    for (i = 0; i < 9; i++) printf("%d, ", v[i]);
+    printf("%d}\n\n", v[9]);
     for (i = 0; i < 10; i++) {
         cont = 0;
         for (j = 0; j < i; j++) if (v[i] == v[j]) cont++;
@@ -20,6 +20,7 @@ int main() {
             if (cont > max) { max = cont; num = v[i]; }
         }
     }
-    if (max > 0) printf("\n=> Mais repetido: %d (%d vezes).\n", num, max);
-     return 0;
+    if (max > 1) printf("\nMais repetido: %d (%d vezes).\n", num, max);
+    else printf("\nNão houve repeticoes.");
+    return 0;
 }
